@@ -4,6 +4,7 @@ import ru.ncedu.java.my_project.annotations.Description;
 import ru.ncedu.java.my_project.interfaces.Constants;
 import ru.ncedu.java.my_project.interfaces.ProjectObjects;
 
+import java.io.File;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
@@ -33,6 +34,31 @@ public class ExplorerFunctions implements ProjectObjects, Constants {
         }
         System.out.println();
         console.select();
+    }
+
+    @Description(description = "выбор файла по названию или по адресу")
+    protected void select (String fileName){
+        File file = null;
+        try {
+            file = new File(console.getCurrentDirectory().getPath() + "\\" + fileName);
+        }
+        catch (NullPointerException e) {
+            file = new File(fileName);
+        }
+        if (file.exists()) {
+            console.open(file);
+        }
+        else {
+            file = new File(fileName);
+            if (file.exists()) {
+                console.open(file);
+            }
+            else {
+                System.out.println("No such file");
+                console.select();
+            }
+        }
+
     }
 
     @Description(description = "добавляет нового пользователя")
