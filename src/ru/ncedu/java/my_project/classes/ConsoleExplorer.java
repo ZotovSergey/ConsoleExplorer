@@ -62,7 +62,6 @@ public class ConsoleExplorer implements ProjectObjects, Constants {
     }
 
     private void selectFileByNumber() {
-        boolean select = select();
         try {
             int fileTableNumber = scanner.nextInt() - 1;
             if (fileTableNumber == Constants.CONSTANT_NUMBER_OF_PARENT_DIRECTORY_COMMAND) {
@@ -74,10 +73,11 @@ public class ConsoleExplorer implements ProjectObjects, Constants {
         }
         catch (ArrayIndexOutOfBoundsException | NullPointerException e) {
             System.out.println("Wrong number of file");
-            select;
+            select();
         }
         catch (IllegalArgumentException e) {
             System.out.println("This file can not be read");
+            select();
         }
     }
 
