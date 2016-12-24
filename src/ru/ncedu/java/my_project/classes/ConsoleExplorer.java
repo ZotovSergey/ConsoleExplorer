@@ -1,4 +1,7 @@
-package ru.ncedu.java.my_project;
+package ru.ncedu.java.my_project.classes;
+
+import ru.ncedu.java.my_project.interfaces.Constants;
+import ru.ncedu.java.my_project.interfaces.ProjectObjects;
 
 import java.awt.*;
 import java.io.File;
@@ -41,7 +44,7 @@ public class ConsoleExplorer implements ProjectObjects, Constants {
         finishFlag = true;
     }
 
-    protected void setUp() {
+    public void setUp() {
         do {
             displayFilesInExplorer();
         } while(!select());

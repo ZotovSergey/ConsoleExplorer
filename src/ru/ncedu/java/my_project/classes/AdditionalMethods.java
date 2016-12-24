@@ -1,4 +1,6 @@
-package ru.ncedu.java.my_project;
+package ru.ncedu.java.my_project.classes;
+
+import ru.ncedu.java.my_project.interfaces.Constants;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -6,7 +8,7 @@ import java.util.Locale;
 /**
  * Created by Zotov S. on 21.12.2016.
  */
-public class AdditionalMethods implements Constants{
+public class AdditionalMethods implements Constants {
     protected String toGB(long value) {
         return String.format( Locale.US, "%.2f", (double) value / GB_MODIFIER);
     }

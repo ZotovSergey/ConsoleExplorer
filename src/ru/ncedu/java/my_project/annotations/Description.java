@@ -1,4 +1,4 @@
-package ru.ncedu.java.my_project;
+package ru.ncedu.java.my_project.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

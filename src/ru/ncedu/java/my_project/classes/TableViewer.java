@@ -1,4 +1,4 @@
-package ru.ncedu.java.my_project;
+package ru.ncedu.java.my_project.classes;
 
 import java.util.ArrayList;
 

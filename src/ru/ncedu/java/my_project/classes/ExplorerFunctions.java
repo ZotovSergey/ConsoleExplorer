@@ -1,4 +1,8 @@
-package ru.ncedu.java.my_project;
+package ru.ncedu.java.my_project.classes;
+
+import ru.ncedu.java.my_project.annotations.Description;
+import ru.ncedu.java.my_project.interfaces.Constants;
+import ru.ncedu.java.my_project.interfaces.ProjectObjects;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;

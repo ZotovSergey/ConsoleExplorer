@@ -1,4 +1,4 @@
-package ru.ncedu.java.my_project;
+package ru.ncedu.java.my_project.interfaces;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

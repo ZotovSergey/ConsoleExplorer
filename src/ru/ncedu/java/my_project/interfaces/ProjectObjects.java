@@ -1,4 +1,9 @@
-package ru.ncedu.java.my_project;
+package ru.ncedu.java.my_project.interfaces;
+
+import ru.ncedu.java.my_project.classes.AdditionalMethods;
+import ru.ncedu.java.my_project.classes.ConsoleExplorer;
+import ru.ncedu.java.my_project.classes.ExplorerFunctions;
+import ru.ncedu.java.my_project.classes.TableViewer;
 
 import java.util.Scanner;
 
